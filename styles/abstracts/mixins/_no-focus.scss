@@ -1,0 +1,6 @@
+@mixin no-focus {
+    &:focus,
+    &:active {
+        outline-width: 0;
+    }
+}

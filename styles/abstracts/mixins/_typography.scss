@@ -1,0 +1,11 @@
+@mixin typography($font-size, $line-height: null, $font-family: null) {
+    @if ($font-family) {
+        font-family: $font-family;
+    }
+
+    font-size: $font-size;
+
+    @if ($line-height) {
+        line-height: line-height($font-size, $line-height);
+    }
+}

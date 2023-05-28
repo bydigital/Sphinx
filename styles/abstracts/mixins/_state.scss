@@ -1,0 +1,23 @@
+@mixin rest {
+    &,
+    &:link,
+    &:visited {
+        @content;
+    }
+}
+
+@mixin interact {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover,
+        &:active {
+            @content;
+        }
+    }
+}
+
+@mixin disabled {
+    &:disabled,
+    &[disabled] {
+        @content;
+    }
+}

@@ -1,0 +1,9 @@
+//* Provide general colors variable
+@function color($color) {
+    @if map-has-key($colors, $color) {
+        $color: map-get($colors, $color);
+        @return $color;
+    }
+    @warn 'unknown color `#{$color}` in palette';
+    @return null;
+}

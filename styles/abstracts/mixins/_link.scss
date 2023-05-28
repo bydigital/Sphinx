@@ -1,0 +1,8 @@
+@mixin link {
+    color: $link-color;
+    transition: transition(color);
+
+    @include interact {
+        color: $link-color-interact;
+    }
+}

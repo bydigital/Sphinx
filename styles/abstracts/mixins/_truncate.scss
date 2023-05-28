@@ -1,0 +1,6 @@
+@mixin truncate($truncation-boundary) {
+    overflow: hidden;
+    max-width: $truncation-boundary;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

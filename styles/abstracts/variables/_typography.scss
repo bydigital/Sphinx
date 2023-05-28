@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato&family=Quicksand:wght@400;500&display=swap');
+
+$quicksand: 'Quicksand', sans-serif;
+$caveat: 'Caveat', cursive;
+$lato: 'Lato', sans-serif;
+
+%h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    font-family: $quicksand;
+    line-height: 4.5rem;
+}
+
+%h1-alt {
+    font-size: 4.5rem;
+    font-weight: 500;
+    font-family: $caveat;
+    line-height: 5.5rem;
+}
+
+%h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: $quicksand;
+    line-height: 3.6rem;
+}
+
+%h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    font-family: $quicksand;
+    line-height: 2.5rem;
+}
+
+%h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: $quicksand;
+    line-height: 2.5rem;
+}
+
+%button-large {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: $quicksand;
+    line-height: 2.5rem;
+}
+
+%button-small {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: $quicksand;
+    line-height: 2.4rem;
+}
+
+%body-large {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: $lato;
+    line-height: 2.5rem;
+}
+
+%body-small {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: $lato;
+    line-height: 2.4rem;
+}

@@ -1,0 +1,8 @@
+.button {
+    @extend %button-large;
+    font-weight: 600;
+    border-radius: 5rem;
+    padding: 1.2rem 2.5rem;
+    text-decoration: none;
+    transition: ease all 0.3s;
+}

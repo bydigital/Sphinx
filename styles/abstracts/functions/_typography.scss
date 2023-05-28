@@ -1,0 +1,21 @@
+$unit-values: ('px', 'em', 'rem', 'normal', 'inherit', 'initial', 'unset');
+
+@function line-height($font-size, $line-height) {
+    @return $line-height / $font-size;
+}
+
+@function letter-spacing($letter-spacing, $values: $unit-values) {
+    @if type-of($letter-spacing) == 'number' {
+        @if index($values, unit($letter-spacing)) {
+            @return $letter-spacing;
+        } @else {
+            @return $letter-spacing * 1px;
+        }
+    } @else {
+        @if index($values, $letter-spacing) {
+            @return $letter-spacing;
+        } @else {
+            @error 'Please enter a valid numeric or string letter-spacing value.';
+        }
+    }
+}

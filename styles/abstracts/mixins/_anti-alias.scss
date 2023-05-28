@@ -1,0 +1,8 @@
+@mixin anti-alias {
+    // Alias webkit based browsers. Only works on macOS
+    -webkit-font-smoothing: antialiased;
+    // Alias gecko browsers. Only works on macOS
+    -moz-osx-font-smoothing: grayscale;
+    // Turn on ligatures
+    text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,7 @@
+@mixin blockquote {
+    @include first-last-margin-reset;
+    padding: space-nth(2);
+    border-left: 0.4rem solid currentColor;
+    margin-right: 0;
+    margin-left: 0;
+}

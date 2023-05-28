@@ -1,0 +1,13 @@
+@function transition($properties...) {
+    $transitions-string: ();
+
+    @each $property in $properties {
+        $transitions-string: append(
+            $transitions-string,
+            $property $transition-time $transition-ease 0s,
+            comma
+        );
+    }
+
+    @return $transitions-string;
+}
