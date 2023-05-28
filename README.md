@@ -1,1 +1,1 @@
-# Welcome to Hydra!
+# Welcome to Sphinx!
